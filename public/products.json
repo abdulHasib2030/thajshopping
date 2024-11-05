@@ -1,0 +1,179 @@
+[
+  {
+    "product_id": 1,
+    "product_title": "Apple MacBook Pro 16",
+    "product_image": "macbook_pro_16.jpg",
+    "category": "MacBooks",
+    "price": 2399,
+    "description": "Apple MacBook Pro 16 with M1 Pro chip, 16GB RAM, 512GB SSD.",
+    "specification": ["M1 Pro Chip", "16GB RAM", "512GB SSD", "16-inch Retina Display"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 2,
+    "product_title": "Dell XPS 13",
+    "product_image": "dell_xps_13.jpg",
+    "category": "Laptops",
+    "price": 1299,
+    "description": "Dell XPS 13 with Intel Core i7, 16GB RAM, 512GB SSD.",
+    "specification": ["Intel Core i7", "16GB RAM", "512GB SSD", "13.4-inch FHD+ Display"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 3,
+    "product_title": "iPhone 13 Pro Max",
+    "product_image": "iphone_13_pro_max.jpg",
+    "category": "iPhones",
+    "price": 1099,
+    "description": "iPhone 13 Pro Max with A15 Bionic chip, 6.7-inch display, 128GB storage.",
+    "specification": ["A15 Bionic Chip", "128GB Storage", "6.7-inch Super Retina XDR Display"],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 4,
+    "product_title": "Samsung Galaxy S21 Ultra",
+    "product_image": "samsung_galaxy_s21_ultra.jpg",
+    "category": "Phones",
+    "price": 1199,
+    "description": "Samsung Galaxy S21 Ultra with 108MP camera, 12GB RAM, 256GB storage.",
+    "specification": ["108MP Camera", "12GB RAM", "256GB Storage", "6.8-inch Dynamic AMOLED 2X"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 5,
+    "product_title": "Apple Watch Series 7",
+    "product_image": "apple_watch_series_7.jpg",
+    "category": "Smart Watches",
+    "price": 399,
+    "description": "Apple Watch Series 7 with larger display, 50% more durable.",
+    "specification": ["Retina Display", "50% More Durable", "Built-in GPS"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 6,
+    "product_title": "Sony WH-1000XM4",
+    "product_image": "sony_wh_1000xm4.jpg",
+    "category": "Accessories",
+    "price": 349,
+    "description": "Sony noise-canceling wireless headphones with superior sound quality.",
+    "specification": ["Noise-Canceling", "30 Hours Battery Life", "Wireless"],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 7,
+    "product_title": "HP Spectre x360",
+    "product_image": "hp_spectre_x360.jpg",
+    "category": "Laptops",
+    "price": 1399,
+    "description": "HP Spectre x360 with Intel Core i7, 16GB RAM, 512GB SSD.",
+    "specification": ["Intel Core i7", "16GB RAM", "512GB SSD", "13.3-inch FHD Touchscreen"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": 8,
+    "product_title": "MacBook Air M1",
+    "product_image": "macbook_air_m1.jpg",
+    "category": "MacBooks",
+    "price": 999,
+    "description": "MacBook Air with M1 chip, 8GB RAM, 256GB SSD.",
+    "specification": ["M1 Chip", "8GB RAM", "256GB SSD", "13-inch Retina Display"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 9,
+    "product_title": "Samsung Galaxy Watch 4",
+    "product_image": "galaxy_watch_4.jpg",
+    "category": "Smart Watches",
+    "price": 249,
+    "description": "Samsung Galaxy Watch 4 with fitness tracking and Wear OS.",
+    "specification": ["Fitness Tracking", "Wear OS", "Water-Resistant"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 10,
+    "product_title": "iPhone 12",
+    "product_image": "iphone_12.jpg",
+    "category": "iPhones",
+    "price": 799,
+    "description": "iPhone 12 with A14 Bionic chip, 6.1-inch display, 64GB storage.",
+    "specification": ["A14 Bionic Chip", "64GB Storage", "6.1-inch Super Retina XDR Display"],
+    "availability": false,
+    "rating": 4.7
+  },
+  {
+    "product_id": 11,
+    "product_title": "Asus ROG Zephyrus G14",
+    "product_image": "asus_rog_zephyrus_g14.jpg",
+    "category": "Laptops",
+    "price": 1499,
+    "description": "Asus ROG Zephyrus G14 with AMD Ryzen 9, 16GB RAM, 1TB SSD.",
+    "specification": ["AMD Ryzen 9", "16GB RAM", "1TB SSD", "14-inch 120Hz Display"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 12,
+    "product_title": "AirPods Pro",
+    "product_image": "airpods_pro.jpg",
+    "category": "Accessories",
+    "price": 249,
+    "description": "Apple AirPods Pro with active noise cancellation and wireless charging.",
+    "specification": ["Noise Cancellation", "Wireless Charging", "Water-Resistant"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 13,
+    "product_title": "OnePlus 9 Pro",
+    "product_image": "oneplus_9_pro.jpg",
+    "category": "Phones",
+    "price": 969,
+    "description": "OnePlus 9 Pro with Snapdragon 888, 8GB RAM, 128GB storage.",
+    "specification": ["Snapdragon 888", "8GB RAM", "128GB Storage", "6.7-inch Fluid AMOLED"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": 14,
+    "product_title": "Garmin Forerunner 945",
+    "product_image": "garmin_forerunner_945.jpg",
+    "category": "Smart Watches",
+    "price": 599,
+    "description": "Garmin Forerunner 945 GPS running watch with music and maps.",
+    "specification": ["GPS", "Music Storage", "Heart Rate Monitor"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 15,
+    "product_title": "Samsung Galaxy Buds Pro",
+    "product_image": "galaxy_buds_pro.jpg",
+    "category": "Accessories",
+    "price": 199,
+    "description": "Samsung Galaxy Buds Pro with active noise canceling and 28-hour battery.",
+    "specification": ["Noise Cancellation", "28-Hour Battery", "Wireless Charging"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 16,
+    "product_title": "MacBook Pro 14",
+    "product_image": "macbook_pro_14.jpg",
+    "category": "MacBooks",
+    "price": 1999,
+    "description": "MacBook Pro 14 with M1 Pro chip, 16GB RAM, 512GB SSD.",
+    "specification": ["M1 Pro Chip", "16GB RAM", "512GB SSD", "14-inch Retina Display"],
+    "availability": false,
+    "rating": 4.8
+  }
+]
+ 
