@@ -5,21 +5,34 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 import { useContext, useEffect, useState } from "react";
 import { productsContext } from "../Root/Root";
+import { Helmet } from "react-helmet-async";
 
 
 const ProductDetails = () => {
     const pathLocation = useLocation()
     const product = (pathLocation.pathname.split('/'))
     const productID = (product[product.length - 1])
-    const {allProducts, handleAddToCart} = useContext(productsContext)
+    
+    const {allProducts, handleAddToCart, wishListItem, disableWish, setDisableWish} = useContext(productsContext)
     const loadData = useLoaderData()
-  
+    const [isActiveWish, setIsActiveWish] = useState(true)
+    setDisableWish(true)
     const data = loadData.find(data => data.product_id === parseInt(productID))
+    
+ wishListItem.map(data => {
+    if (data.product_id === parseInt(productID)){
+        setDisableWish(false)
+    }
+ })
+    
     const { description, product_title, availability, specification, rating, product_image, price } = data
     console.log(data)
     return (
        
         <div className="">
+            <Helmet>
+                <title> {product_title} </title>
+            </Helmet>
             <div className="bg-gradient-to-r from-teal-400 to-blue-500 text-center space-y-4 p-12 text-white pb-56">
                 <h1 className="text-4xl font-bold">Product Details</h1>
                 <p className="w-[80%] mx-auto">Explore the latest gadgets that will experience to
@@ -68,11 +81,17 @@ const ProductDetails = () => {
                             font-bold text-2xl bg- gap-3">Add To Cart <IoCartOutline />
                            </button>
                         }
-
-                        <div onClick={() => handleAddToCart(data, "wishlist")}  className="border-2 p-2 cursor-pointer rounded-full text-2xl">
+{
+    disableWish ? 
+    <div onClick={() => handleAddToCart(data, "wishlist")}  className="border-2 p-2 cursor-pointer rounded-full text-2xl">
                             <FaRegHeart />
 
-                        </div>
+                        </div>:
+                        <button className="btn" disabled="disabled"><FaRegHeart /></button>
+                        
+
+}
+                        
                     </div>
 
 

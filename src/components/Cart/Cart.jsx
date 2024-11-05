@@ -1,22 +1,33 @@
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import deletebtn from '../../assets/delete.png'
 import { IoClose } from "react-icons/io5";
 import { productsContext } from '../Root/Root';
 import purchase from '../../assets/Group.png'
 import { useNavigate } from 'react-router-dom';
 const Cart = () => {
-    const { cartItemCnt, handleCartItemDelete, handlePurchase } = useContext(productsContext)
-
+    const { cartItemCnt,handleDecendingSort, handleCartItemDelete, handlePurchase } = useContext(productsContext)
     let totalCost = 0;
     cartItemCnt.map(data =>
         totalCost += data.price
     )
 
-    const handleDecendingSort = () => {
-        cartItemCnt.sort((a, b) => b.price - a.price)
-    }
+    const [sortCart, setSortCart] = useState([])
 
+    useEffect(()=>{
+        setSortCart(cartItemCnt)
+    }, [cartItemCnt])
+
+
+
+    const handleSort = () =>{
+        const newSort = [...sortCart].sort((a, b) => b.price - a.price)
+       
+        setSortCart(newSort)
+        console.log(sortCart, newSort)
+    }
    
+   console.log(sortCart)
+
     return (
         <div className='md:container mx-auto w-[90%] '>
 
@@ -46,7 +57,7 @@ const Cart = () => {
                     <h3 className='font-bold text-xl mr-5'>Total cost: {totalCost} </h3>
                     {
                         cartItemCnt.length > 0 ?
-                            <button onClick={handleDecendingSort}
+                            <button onClick={handleSort}
                                 className='py-2 px-6 border-2 border-blue-500 font-semibold rounded-full mr-4'>Sort by price</button>
                             :
                             <button disabled="disabled"
@@ -62,7 +73,7 @@ const Cart = () => {
             </div>
 
             {
-                cartItemCnt.map(data =>
+                sortCart.map(data =>
 
                     <div className='border rounded-xl flex justify-between items-center py-4 px-4'>
                         <div className='flex gap-6 items-center'>

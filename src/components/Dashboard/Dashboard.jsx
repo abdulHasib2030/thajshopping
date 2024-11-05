@@ -2,12 +2,16 @@ import { useContext, useState } from "react";
 import Cart from "../Cart/Cart";
 import WishList from "../WishList/WishList";
 import { productsContext } from "../Root/Root";
+import { Helmet } from "react-helmet-async";
 
 const Dashboard = () => {
     const {handleCartShow, showCartWishList} = useContext(productsContext)
     
     return (
         <div>
+            <Helmet>
+                <title>THAJ Shopping | Dashboard</title>
+            </Helmet>
            <div className="bg-gradient-to-r from-teal-400 to-blue-500 text-center space-y-4 p-12 text-white">
             <h1 className="text-4xl font-bold">Dashboard</h1>
             <p className="w-[80%] mx-auto">Explore the latest gadgets that will experience to 

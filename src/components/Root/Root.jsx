@@ -13,6 +13,7 @@ const Root = () => {
     const [allProducts, setAllProducts] = useState([])
     let [cartItemCnt, setCartItemCnt] = useState([]);
     let [wishListItem, setWishLishItem] = useState([])
+    const [disableWish, setDisableWish] = useState(true)
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
@@ -41,6 +42,7 @@ const Root = () => {
             if (flag === true){
                 const newWishItem = [...wishListItem, cartItem]
                 setWishLishItem(newWishItem)
+                setDisableWish(false)
                 toast.success("Added to the WishList.",
                     {
                         position:'top-center',
@@ -91,11 +93,17 @@ const Root = () => {
          }
     }
 
+    const handleDecendingSort = () => {
+        const newSortCart = cartItemCnt.sort((a, b) => b.price - a.price)
+       
+        setCartItemCnt(newSortCart)
+    }
+
 
     return (
         <div className='relative bg-[#F7F7F7]'>
-            <productsContext.Provider value={{allProducts, handleAddToCart, cartItemCnt, wishListItem, handleCartItemDelete,
-                handlePurchase, handleCartShow, showCartWishList
+            <productsContext.Provider value={{allProducts, handleAddToCart, cartItemCnt,handleDecendingSort, wishListItem, handleCartItemDelete,
+                handlePurchase, handleCartShow, showCartWishList, disableWish, setDisableWish
             }}>
                 <Navbar ></Navbar>
                 <Outlet></Outlet>

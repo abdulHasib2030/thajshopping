@@ -13,7 +13,7 @@ const Main = () => {
     }, [allProducts])
     console.log(allProducts)
     
-    const categories = ["All Products", "MacBooks", "Laptops", "iPhones", "Phones", "Accessories", "Smart Watches"];
+    const categories = ["All Products","Phones", "MacBooks", "Laptops", "iPhones",  "Accessories", "Smart Watches"];
     let active = [false, false, false, false, false, false, false]
    
 
@@ -47,7 +47,7 @@ const Main = () => {
         }
     </>
     return (
-        <div className='mt-52 md:mt-72'>
+        <div className=''>
             <h1 className='text-center text-2xl font-bold md:mb-10 mb-20'>Explore Cutting-Edge Gadgets</h1>
             <div className='flex relative'>
                 <div className="w-[45%] hidden lg:block">
