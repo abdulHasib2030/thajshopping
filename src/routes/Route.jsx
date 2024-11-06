@@ -5,6 +5,7 @@ import ErrorPage from "../components/ErrorPage/ErrorPage";
 import Statistics from "../components/Statistics/Statistics";
 import Dashboard from "../components/Dashboard/Dashboard";
 import ProductDetails from "../components/ProductDetails/ProductDetails";
+import OrderHistory from "../components/OrderHistory/OrderHistory";
 
 
 const router = createBrowserRouter([
@@ -28,7 +29,10 @@ const router = createBrowserRouter([
             path:'details/:id',
             element:<ProductDetails></ProductDetails>,
             loader: ()=> fetch('/products.json')
-            
+        },
+        {
+            path: 'order-history',
+            element: <OrderHistory></OrderHistory>
         }
     
     ]

@@ -2,7 +2,7 @@
   {
     "product_id": 1,
     "product_title": "Apple MacBook Pro 16",
-    "product_image": "macbook_pro_16.jpg",
+    "product_image": "https://i.ibb.co.com/prm726H/mbp14-spaceblack-select-202410.jpg",
     "category": "MacBooks",
     "price": 2399,
     "description": "Apple MacBook Pro 16 with M1 Pro chip, 16GB RAM, 512GB SSD.",
@@ -13,7 +13,7 @@
   {
     "product_id": 2,
     "product_title": "Dell XPS 13",
-    "product_image": "dell_xps_13.jpg",
+    "product_image": "https://i.ibb.co.com/gTm7ZtW/notebook-xps-13-9345-t-gray-gallery-2.jpg",
     "category": "Laptops",
     "price": 1299,
     "description": "Dell XPS 13 with Intel Core i7, 16GB RAM, 512GB SSD.",
@@ -24,8 +24,8 @@
   {
     "product_id": 3,
     "product_title": "iPhone 13 Pro Max",
-    "product_image": "iphone_13_pro_max.jpg",
-    "category": "iPhones",
+    "product_image": "https://i.ibb.co.com/qYL4Lsv/finishes-1-sierra-blue-2bovafkl4yaa-medium.jpg",
+    "category": "Phones",
     "price": 1099,
     "description": "iPhone 13 Pro Max with A15 Bionic chip, 6.7-inch display, 128GB storage.",
     "specification": ["A15 Bionic Chip", "128GB Storage", "6.7-inch Super Retina XDR Display"],
@@ -35,7 +35,7 @@
   {
     "product_id": 4,
     "product_title": "Samsung Galaxy S21 Ultra",
-    "product_image": "samsung_galaxy_s21_ultra.jpg",
+    "product_image": "https://i.ibb.co.com/RphNQzL/samsung-galaxy-s21-ultra-5g.jpg",
     "category": "Phones",
     "price": 1199,
     "description": "Samsung Galaxy S21 Ultra with 108MP camera, 12GB RAM, 256GB storage.",
@@ -46,7 +46,7 @@
   {
     "product_id": 5,
     "product_title": "Apple Watch Series 7",
-    "product_image": "apple_watch_series_7.jpg",
+    "product_image": "https://i.ibb.co.com/jk8Yf3q/display-dimension-s7-static-er47vve3gawm-medium.jpg",
     "category": "Smart Watches",
     "price": 399,
     "description": "Apple Watch Series 7 with larger display, 50% more durable.",
@@ -57,7 +57,7 @@
   {
     "product_id": 6,
     "product_title": "Sony WH-1000XM4",
-    "product_image": "sony_wh_1000xm4.jpg",
+    "product_image": "https://i.ibb.co.com/6Fq6hcJ/2097-43505.jpg",
     "category": "Accessories",
     "price": 349,
     "description": "Sony noise-canceling wireless headphones with superior sound quality.",
@@ -68,7 +68,7 @@
   {
     "product_id": 7,
     "product_title": "HP Spectre x360",
-    "product_image": "hp_spectre_x360.jpg",
+    "product_image": "https://i.ibb.co.com/t85dxVv/c08744378.webp",
     "category": "Laptops",
     "price": 1399,
     "description": "HP Spectre x360 with Intel Core i7, 16GB RAM, 512GB SSD.",
@@ -79,7 +79,7 @@
   {
     "product_id": 8,
     "product_title": "MacBook Air M1",
-    "product_image": "macbook_air_m1.jpg",
+    "product_image": "https://i.ibb.co.com/Mp0hWTP/2323-92738.jpg",
     "category": "MacBooks",
     "price": 999,
     "description": "MacBook Air with M1 chip, 8GB RAM, 256GB SSD.",
@@ -90,7 +90,7 @@
   {
     "product_id": 9,
     "product_title": "Samsung Galaxy Watch 4",
-    "product_image": "galaxy_watch_4.jpg",
+    "product_image": "https://i.ibb.co.com/KFw7NqD/watch4-kv.jpg",
     "category": "Smart Watches",
     "price": 249,
     "description": "Samsung Galaxy Watch 4 with fitness tracking and Wear OS.",
@@ -101,8 +101,8 @@
   {
     "product_id": 10,
     "product_title": "iPhone 12",
-    "product_image": "iphone_12.jpg",
-    "category": "iPhones",
+    "product_image": "https://i.ibb.co.com/MBg0hcd/1533-91835.jpg",
+    "category": "Phones",
     "price": 799,
     "description": "iPhone 12 with A14 Bionic chip, 6.1-inch display, 64GB storage.",
     "specification": ["A14 Bionic Chip", "64GB Storage", "6.1-inch Super Retina XDR Display"],
@@ -112,7 +112,7 @@
   {
     "product_id": 11,
     "product_title": "Asus ROG Zephyrus G14",
-    "product_image": "asus_rog_zephyrus_g14.jpg",
+    "product_image": "https://i.ibb.co.com/pfJpZm4/Asus-ROG-Zephyrus-G14-7-2.webp",
     "category": "Laptops",
     "price": 1499,
     "description": "Asus ROG Zephyrus G14 with AMD Ryzen 9, 16GB RAM, 1TB SSD.",
@@ -123,7 +123,7 @@
   {
     "product_id": 12,
     "product_title": "AirPods Pro",
-    "product_image": "airpods_pro.jpg",
+    "product_image": "https://i.ibb.co.com/mFYXww5/Air-Pods-Pro-2nd-generation-USB-C-c-6780.jpg",
     "category": "Accessories",
     "price": 249,
     "description": "Apple AirPods Pro with active noise cancellation and wireless charging.",
@@ -134,7 +134,7 @@
   {
     "product_id": 13,
     "product_title": "OnePlus 9 Pro",
-    "product_image": "oneplus_9_pro.jpg",
+    "product_image": "https://i.ibb.co.com/SxLbgHK/9p-Pine-Green.png",
     "category": "Phones",
     "price": 969,
     "description": "OnePlus 9 Pro with Snapdragon 888, 8GB RAM, 128GB storage.",
@@ -145,7 +145,7 @@
   {
     "product_id": 14,
     "product_title": "Garmin Forerunner 945",
-    "product_image": "garmin_forerunner_945.jpg",
+    "product_image": "https://i.ibb.co.com/1f5DDXz/41a-Ko-Ues9-WL-AC.jpg",
     "category": "Smart Watches",
     "price": 599,
     "description": "Garmin Forerunner 945 GPS running watch with music and maps.",
@@ -156,7 +156,7 @@
   {
     "product_id": 15,
     "product_title": "Samsung Galaxy Buds Pro",
-    "product_image": "galaxy_buds_pro.jpg",
+    "product_image": "https://i.ibb.co.com/vDs5XNL/2119-44320.jpg",
     "category": "Accessories",
     "price": 199,
     "description": "Samsung Galaxy Buds Pro with active noise canceling and 28-hour battery.",
@@ -167,13 +167,36 @@
   {
     "product_id": 16,
     "product_title": "MacBook Pro 14",
-    "product_image": "macbook_pro_14.jpg",
+    "product_image": "https://i.ibb.co.com/s2g98CS/mbp14-silver-select-202410.jpg",
     "category": "MacBooks",
     "price": 1999,
     "description": "MacBook Pro 14 with M1 Pro chip, 16GB RAM, 512GB SSD.",
     "specification": ["M1 Pro Chip", "16GB RAM", "512GB SSD", "14-inch Retina Display"],
     "availability": false,
     "rating": 4.8
+  },
+  {
+    "product_id": 17,
+    "product_title": "Realme 8",
+    "product_image": "https://i.ibb.co.com/Ypw5T6y/Realme-8-Cyber-Silver-500x500.jpg",
+    "category": "Phones",
+    "price": 249,
+    "description": "Realme 8 with 64MP camera, MediaTek Helio G95, 128GB storage.",
+    "specification": ["64MP Camera", "MediaTek Helio G95", "128GB Storage", "6.4-inch Super AMOLED"],
+    "availability": true,
+    "rating": 4.3
+  },
+  {
+    "product_id": 18,
+    "product_title": "Poco M3",
+    "product_image": "https://i.ibb.co.com/rZ0jQ2q/images.jpg",
+    "category": "Phones",
+    "price": 159,
+    "description": "Poco M3 with 48MP camera, Snapdragon 662, 64GB storage.",
+    "specification": ["48MP Camera", "Snapdragon 662", "64GB Storage", "6.53-inch FHD+ Display"],
+    "availability": true,
+    "rating": 4.4
   }
 ]
- 
+
+

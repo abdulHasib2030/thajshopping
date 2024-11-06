@@ -13,7 +13,7 @@ const Main = () => {
     }, [allProducts])
     console.log(allProducts)
     
-    const categories = ["All Products","Phones", "MacBooks", "Laptops", "iPhones",  "Accessories", "Smart Watches"];
+    const categories = ["All Products","Phones", "MacBooks", "Laptops",  "Accessories", "Smart Watches"];
     let active = [false, false, false, false, false, false, false]
    
 

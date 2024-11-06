@@ -11,9 +11,12 @@ export const productsContext = createContext()
 const Root = () => {
     const navigate = useNavigate()
     const [allProducts, setAllProducts] = useState([])
-    let [cartItemCnt, setCartItemCnt] = useState([]);
-    let [wishListItem, setWishLishItem] = useState([])
+    const [cartItemCnt, setCartItemCnt] = useState([]);
+    const [wishListItem, setWishLishItem] = useState([])
     const [disableWish, setDisableWish] = useState(true)
+    const [orderHistory, setOrderHistory] = useState([])
+    const [orderTime, setOrderTime] = useState([])
+    let orderId = 1;
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
@@ -74,11 +77,20 @@ const Root = () => {
     }
 
     const handlePurchase = () =>{
-        // totalCost = 0;
+        const currentDate = new Date()
+        const dateTime = (currentDate.toLocaleString().slice(0, 19).replace('T', " "))
+        const orderIdTime =[{orderId:dateTime}]
+        // console.log(orderIdTime, orderId)
+        setOrderTime((fixed)=> [...fixed, orderIdTime])
+        orderId += 1
+        
+        setOrderHistory((newOrderHistory) => [...newOrderHistory, cartItemCnt]);
+        
         setCartItemCnt([])
         // // navigate('/')
         navigate('/')
     }
+   
 
 
     const [showCartWishList, setShowCartWishList] = useState([true, false])
@@ -103,7 +115,8 @@ const Root = () => {
     return (
         <div className='relative bg-[#F7F7F7]'>
             <productsContext.Provider value={{allProducts, handleAddToCart, cartItemCnt,handleDecendingSort, wishListItem, handleCartItemDelete,
-                handlePurchase, handleCartShow, showCartWishList, disableWish, setDisableWish
+                handlePurchase, handleCartShow, showCartWishList, disableWish, setDisableWish,
+                orderHistory, setOrderHistory, orderTime,
             }}>
                 <Navbar ></Navbar>
                 <Outlet></Outlet>

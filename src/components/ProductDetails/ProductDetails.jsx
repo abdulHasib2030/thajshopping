@@ -44,13 +44,13 @@ const ProductDetails = () => {
 
             <div className="md:flex w-[70%] mx-auto h-full rounded-2xl p-6 bg-white relative top-[-180px]">
                 <div className="md:w-[30%] ">
-                    <img src={detailsImg} className="md:h-[350px] rounded-xl" alt="" />
+                    <img src={product_image} className="md:h-[350px] rounded-xl" alt="" />
                 </div>
 
                 <div className="ml-4 space-y-3">
                     <h1 className="text-2xl font-bold">{product_title}</h1>
                     <h5 className="text-xl font-semibold">Price:$ {price}</h5>
-                    <h5 className={`border-2 w-24 ${availability ? 'border-green-600 bg-green-100 ' : 'border-red-600 bg-red-300'} font-semibold  py-1 px-4 rounded-full`}>{availability ? 'In Stock' : 'Out of Stock'}</h5>
+                    <h5 className={`border-2 w-28 ${availability ? 'border-green-600 bg-green-100 ' : 'border-red-600 bg-red-300'} font-semibold  py-1 px-4 rounded-full`}>{availability ? 'In Stock' : 'Out of Stock'}</h5>
                     <p>{description}</p>
                     <h4 className="text-xl font-bold">Specification</h4>
                     <ol className="list-decimal pl-5  text-gray-700">
@@ -74,7 +74,7 @@ const ProductDetails = () => {
                             availability?
                         <button onClick={()=>handleAddToCart(data, "cart")}  
                         className="flex items-center rounded-full py-2 px-7 text-white bg-gradient-to-r
-                         from-teal-400 to-blue-500 font-bold text-2xl bg- gap-3">Add To Cart <IoCartOutline />
+                         from-teal-400 to-blue-500 font-bold text-2xl  gap-3">Add To Cart <IoCartOutline />
                          </button>:
                           <button disabled='disabled'
                           className="flex items-center rounded-full py-2 px-7 btn border-2 

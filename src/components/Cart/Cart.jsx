@@ -4,6 +4,7 @@ import { IoClose } from "react-icons/io5";
 import { productsContext } from '../Root/Root';
 import purchase from '../../assets/Group.png'
 import { useNavigate } from 'react-router-dom';
+import emptyCart from '../../assets/shopping.png'
 const Cart = () => {
     const { cartItemCnt,handleDecendingSort, handleCartItemDelete, handlePurchase } = useContext(productsContext)
     let totalCost = 0;
@@ -31,7 +32,6 @@ const Cart = () => {
     return (
         <div className='md:container mx-auto w-[90%] '>
 
-            {/* Open the modal using document.getElementById('ID').showModal() method */}
             <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
                 <div className="modal-box space-y-4 text-center">
                     <img src={purchase}  className ="mx-auto" alt="" />
@@ -64,20 +64,38 @@ const Cart = () => {
                                 className='py-2 px-6 border-2 btn font-semibold rounded-full mr-4'>Sort by price</button>
 
                     }
+                    {
+                        totalCost > 0 ?     
                     <button onClick={() => document.getElementById('my_modal_5').showModal()}
                      className='py-2 px-6 text-white border-none font-semibold rounded-full 
-                    bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500'>Purchase</button>
+                    bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500
+                     hover:to-orange-500'>Purchase</button>:
 
+                     <button disabled="disabled"
+                     className='py-2 px-7 text-white border-none font-semibold rounded-full 
+                     btn'>Purchase</button>
+  }
 
                 </div>
             </div>
 
+           
+
             {
+                sortCart.length === 0 ? 
+                <div className='text-center space-y-3'>
+                    <img src={emptyCart} className='w-[20%] mx-auto' alt="" />
+                    <h1 className='text-2xl font-semibold text-red-500'>Your Cart is Empty</h1>
+                    <p>Looks like you haven't added anything to your cart yet</p>
+
+                </div> :
+                <div>
+                     {
                 sortCart.map(data =>
 
                     <div className='border rounded-xl flex justify-between items-center py-4 px-4'>
                         <div className='flex gap-6 items-center'>
-                            <img src={deletebtn} className='w-20 rounded-full' alt="" />
+                            <img src={data.product_image} className='w-20 rounded-full' alt="" />
                             <div>
                                 <h4 className='font-bold text-2xl mb-3'>{data.product_title}</h4>
                                 <h4 className='text-black text-xl font-semibold'>Description: <span className='text-gray-500 text-sm'>{data.description} </span></h4>
@@ -94,6 +112,8 @@ const Cart = () => {
                     </div>
 
                 )
+            }
+                </div>
             }
 
         </div>
