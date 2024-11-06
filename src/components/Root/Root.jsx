@@ -69,10 +69,16 @@ const Root = () => {
         if (type === 'cart'){
             const newCart = cartItemCnt.filter(data2 => data2 !== data)
             setCartItemCnt(newCart)  
+            toast.error('Remove Cart Item', {
+                position:'top-center'
+            })
         }
         else{
             const newWish = wishListItem.filter(data2 => data2 !== data)
           setWishLishItem(newWish)
+          toast.error("Remove Wishlist Item", {
+            position:'top-center'
+          })
         }
     }
 

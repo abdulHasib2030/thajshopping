@@ -2,11 +2,15 @@ import React, { useContext } from 'react';
 import orderHistoryImg from '../../assets/order-history.png';
 import { productsContext } from '../Root/Root';
 import { json } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 const OrderHistory = () => {
     const { orderHistory, orderTime } = useContext(productsContext)
 
     return (
         <div className='mt-9 md:container mx-auto w-[90%]'>
+            <Helmet>
+                <title>THAJ Shopping | Order-history</title>
+            </Helmet>
 
             {
                 orderHistory.length > 0 ?
