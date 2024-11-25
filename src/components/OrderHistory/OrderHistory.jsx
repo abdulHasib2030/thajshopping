@@ -17,14 +17,14 @@ const OrderHistory = () => {
                     <div>
                         {
                             orderHistory.map((data, idx) =>
-                                <>
+                                <div>
                                     {
                                         data.length > 1 ? <>
                                             <h1 className='py-2 px-7 text-white bg-gradient-to-r
                          from-teal-400 to-blue-500 font-bold text-2xl mt-5'>Order Place Date & Time:{orderTime[idx][0].orderId}</h1>
                                             {
                                                 data.map(data2 =>
-                                                    <>
+                                                    <div>
                                                         <div className='border rounded-xl flex justify-between items-center py-4 px-4'>
                                                             <div className='flex gap-6 items-center'>
                                                                 <img src={data2.product_image} className='w-20 ' alt="" />
@@ -36,7 +36,7 @@ const OrderHistory = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </>
+                                                    </div>
                                                 )
                                             }
                                         </> : <>
@@ -55,7 +55,7 @@ const OrderHistory = () => {
                                             </div>
                                         </>
                                     }
-                                </>
+                                </div>
                             )
                         }
                     </div>

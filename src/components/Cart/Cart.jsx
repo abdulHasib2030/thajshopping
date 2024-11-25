@@ -95,7 +95,7 @@ const Cart = () => {
 
                     <div className='border rounded-xl flex justify-between items-center py-4 px-4'>
                         <div className='flex gap-6 items-center'>
-                            <img src={data.product_image} className='w-20 rounded-full' alt="" />
+                            <img src={data.product_image} className='w-20 ' alt="" />
                             <div>
                                 <h4 className='font-bold text-2xl mb-3'>{data.product_title}</h4>
                                 <h4 className='text-black text-xl font-semibold'>Description: <span className='text-gray-500 text-sm'>{data.description} </span></h4>
