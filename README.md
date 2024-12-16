@@ -73,5 +73,4 @@ In this project, Context API is used to handle and manage global state, making d
 
 
 ## 🔗 Live Link
-
-https://thajshopping.netlify.app/
+https://thjshopping.netlify.app/
