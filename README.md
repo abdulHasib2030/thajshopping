@@ -1,5 +1,5 @@
 
-# THAJ Shopping E-commerce Platform
+# THJ Shopping E-commerce Platform
 
 This platform allows users to browse gadgets by category, view product details, add items to a cart and wishlist, and sort products by price. The site is built with React, using several packages to enhance functionality and user experience.
 
