@@ -6,7 +6,7 @@ const Footer = () => {
         <div className='mt-16 bg-white py-24'>
             <footer className='md:container mx-auto w-[90%] space-y-4'>
                 <div className='text-center'>
-                    <h1 className='font-bold text-4xl mb-4 flex justify-center items-center'> <img className='md:w-28 w-20 mr-3' src={logo} alt="" />THAJ Shopping</h1>
+                    <h1 className='font-bold text-4xl mb-4 flex justify-center items-center'> <img className='md:w-28 w-20 mr-3' src={logo} alt="" />THJ Shopping</h1>
                     <p>Leading the way in cutting-edge technology and innovation</p>
                 </div>
                 <div className='divider'></div>

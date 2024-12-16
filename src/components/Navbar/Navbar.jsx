@@ -64,7 +64,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className={`${parms.pathname.length > 1 ? 'text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500': 'text-white'} text-3xl  font-bold `}>
-                        <Link to={'/'} className='flex'> <img src={logo} className='md:w-28 w-20 mr-2' alt="" /> THAJ Shopping</Link>
+                        <Link to={'/'} className='flex items-center '> <img src={logo} className='md:w-28 w-20 mr-2' alt="" /> <span className='hidden md:block'>THJ Shopping</span> </Link>
                         </div>
                 </div>
 
